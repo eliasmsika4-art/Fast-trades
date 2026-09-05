@@ -22,9 +22,10 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-    - name: Build with Gradle
-      run: ./gradlew build
-            - name: Build APK
+    -       - name: Build with Gradle
+        run: ./gradlew build
+
+      - name: Build APK
         run: ./gradlew assembleDebug
 
       - name: Upload APK
